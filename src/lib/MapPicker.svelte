@@ -5,6 +5,8 @@
     import TileLayer from '$lib/TileLayer.svelte'
     import Icon from '$lib/Icon.svelte'
 
+    import iconUrl from '$assets/marker.png'
+
     export let points = [];
     export let middle_point = null;
 
@@ -32,7 +34,7 @@
         points = points.filter(x => x!==p);
     }
     const iconOptions = {
-        iconUrl: 'public/marker.png',
+        iconUrl: iconUrl,
         iconSize: [41, 41],
         iconAnchor: [20, 41],
         popupAnchor: [1, -34],

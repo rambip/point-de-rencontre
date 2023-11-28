@@ -27,6 +27,7 @@
     <div class="map">
         <MapPicker bind:points={meeting_points} {middle_point} origin={p0}/>
     </div>
+    <span>clique sur la carte pour choisir des points.<br>Clique une seconde fois pour les supprimer</span>
     <button on:click={compute}>calculer</button>
 </div>
 
